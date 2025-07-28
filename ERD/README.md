@@ -127,3 +127,11 @@ permission(permission_id, name)
 ```
 role(role_id, name)
 ```
+
+```
+user_role(user_role_id, user_id, role_id)
+```
+
+```
+user_permission(user_permission_id, user_id, permission_id)
+```

@@ -1,3 +1,5 @@
+# Classes
+
 ```
 class Patient:
 patient_id
@@ -43,7 +45,9 @@ specialty_id
 name
 
     def list_doctors_by_specialty()
+```
 
+```
 class Appointment:
 appointment_id
 patient_id
@@ -324,8 +328,8 @@ factor_id
 ```
 
 ```
-class User:
-user_id
+class Admin:
+admin_id
 name
 family
 phone_number
@@ -347,4 +351,60 @@ name
 class Role:
 role_id
 name
+```
+
+## Add
+
+```
+class Insurance {
+    insuranceId
+    name
+    coverageDetails
+    phone_number
+    address
+}
+```
+
+```
+class InsurancePharmacy {
+    id
+    pharmacyId
+    insuranceId
+    contractStart
+    contractEnd
+}
+```
+
+```
+class Disease {
+    diseaseId
+    name
+    description
+}
+```
+
+```
+class Nurse {
+    nurseId
+    name
+    family
+    phoneNumber
+    email
+    licenseNumber
+    password
+    experienceYears
+    gender
+}
+```
+
+```
+class HospitalizationAtHome {
+    id
+    patientId
+    doctorId
+    startDate
+    endDate
+    status
+    notes
+}
 ```

@@ -37,7 +37,7 @@ reminder(reminder_id, patient_id, drug_name, time_of_first_use)
 ```
 
 ```
-educational_content(content_id, title, content_type, file_url, average_rating)
+educational_content(content_id, title, content_type, file_url, average_rating, disease_id, specialty_id)
 ```
 
 ```
@@ -117,7 +117,7 @@ payment_factorse(patient_factor_id, factor_id)
 ```
 
 ```
-users(user_id, name, family, phone_number, email, password, validated)
+admin(admin_id, administrator, name, family, phone_number, email, password, validated)
 ```
 
 ```
@@ -129,9 +129,44 @@ role(role_id, name)
 ```
 
 ```
-user_role(user_role_id, user_id, role_id)
+admin_role(admin_role_id, admin_id, role_id)
 ```
 
 ```
-user_permission(user_permission_id, user_id, permission_id)
+admin_permission(admin_permission_id, admin_id, permission_id)
+```
+
+## Add
+
+```
+insurance(insurance_id, name, coverage_details, phone_number, address)
+```
+
+```
+insurance_patient(insurance_patient_id, patient_id, insurance_id, policy_number, expiration_date)
+```
+
+```
+
+support_insurance_pharmacy(support_insurance_pharmacy_id, pharmacy_id, insurance_id, contract_start, contract_end)
+```
+
+```
+disease(disease_id, name, description)
+```
+
+```
+nurse(nurse_id, name, family, phone_number, email, license_number, password, experience_years, gender)
+```
+
+```
+hospitalization_at_home(hospitalization_id, patient_id, doctor_id, start_date, end_date, status, notes)
+```
+
+```
+hospitalization_at_home_nurse(hhn_id, hospitalization_id, nurse_id, assigned_date, shift_time)
+```
+
+```
+hospitalization_at_home_device(hhd_id, hospitalization_id)
 ```

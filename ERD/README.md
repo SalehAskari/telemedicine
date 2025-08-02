@@ -166,7 +166,3 @@ hospitalization_at_home(hospitalization_id, patient_id, doctor_id, start_date, e
 ```
 hospitalization_at_home_nurse(hhn_id, hospitalization_id, nurse_id, assigned_date, shift_time)
 ```
-
-```
-hospitalization_at_home_device(hhd_id, hospitalization_id)
-```

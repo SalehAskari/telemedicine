@@ -408,3 +408,99 @@ class HospitalizationAtHome {
     notes
 }
 ```
+
+```
+class MedicalDocumentType:
+mdt_id
+name
+
+    def create_type()
+    def update_type()
+    def delete_type()
+
+```
+
+```
+class MedicalDocument:
+medical_document_id
+patient_id
+file_url
+mdt_id
+
+    def upload_document()
+    def update_document()
+    def delete_document()
+    def view_document()
+
+```
+
+```
+class Hospital:
+hospital_id
+name
+code
+phone_number
+email
+address
+city
+province
+hospital_type
+website
+description
+
+    def register_hospital()
+    def update_info()
+    def get_details()
+
+```
+
+```
+class RequestSendMedicine:
+rsm_id
+pharmacy_order
+request_date
+receiver_name
+receiver_phone
+delivery_address
+delivery_location
+preferred_time_window
+delivery_cost
+need_refrigerator
+fast_delivery
+notes
+delivery_status_id
+
+    def create_request()
+    def update_request()
+    def cancel_request()
+    def track_delivery()
+
+```
+
+```
+class DeliveryStatus:
+delivery_status_id
+name
+description
+
+    def set_status()
+    def update_status()
+    def get_status()
+```
+
+```
+class SendMedicine:
+send_medicine_id
+snapp_tracking_code
+name
+phone_number
+vehicle_model
+vehicle_plate
+national_id
+profile_photo_url
+
+    def assign_delivery()
+    def update_driver_info()
+    def complete_delivery()
+
+```

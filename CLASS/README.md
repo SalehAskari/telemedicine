@@ -504,3 +504,103 @@ profile_photo_url
     def complete_delivery()
 
 ```
+
+```
+class RoleChat:
+    role_chat_id
+    name
+
+    def create()
+    def update()
+    def delete()
+
+```
+
+```
+class User:
+    user_id
+    role_chat_id
+    reference_id
+    name
+    profile_photo_url
+
+    def join_chat()
+    def send_message()
+    def update_profile()
+    def get_chats()
+
+```
+
+```
+class Chat:
+    chat_id
+    is_group
+    name
+    created_by
+
+    def create()
+    def rename()
+    def delete()
+    def add_participant()
+    def remove_participant()
+
+```
+
+```
+class ChatParticipant:
+    chat_id
+    user_id
+    role_chat_id
+    joined_at
+
+    def join()
+    def leave()
+    def update_role()
+
+```
+
+```
+class Message:
+    message_id
+    chat_id
+    sender_id
+    content
+    message_type
+    reply_to_id
+    sent_at
+    edited_at
+    deleted_at
+
+    def send()
+    def edit()
+    def delete()
+    def reply()
+
+```
+
+```
+class MessageMedia:
+    media_id
+    message_id
+    file_url
+    file_type
+    file_size
+
+    def upload()
+    def download()
+    def delete()
+
+```
+
+```
+class MessageStatus:
+    message_id
+    user_id
+    is_seen
+    seen_at
+    is_delivered
+
+    def mark_seen()
+    def mark_delivered()
+    def get_status()
+```

@@ -53,10 +53,6 @@ pharmacy(pharmacy_id, name, address, phone_number, delivery_available, location)
 ```
 
 ```
-message(message_id, sender_id, receiver_id, content, sent_at, seen)
-```
-
-```
 device(device_id, device_type, model_name, serial_number, connection_type)
 ```
 
@@ -193,4 +189,32 @@ delivery_status(delivery_status_id, name, description)
 
 ```
 send_medicine(send_medicine_id, snapp_tracking_code, name, phone_number, vehicle_model, vehicle_plate, national_id, profile_photo_url)
+```
+
+```
+role_chat(role_chat_id, name)
+```
+
+```
+users(user_id, role_chat_id, reference_id, name, profile_photo_url)
+```
+
+```
+chat(chat_id, is_group, name, created_by)
+```
+
+```
+chat_participant(chat_id, user_id, role_chat_id, joined_at)
+```
+
+```
+message(message_id, chat_id, sender_id, content, message_type, reply_to_id, sent_at, edited_at, deleted_at)
+```
+
+```
+message_media(media_id, message_id, file_url, file_type, file_size)
+```
+
+```
+message_status(message_id, user_id, is_seen, seen_at, is_delivered)
 ```

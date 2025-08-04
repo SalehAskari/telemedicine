@@ -113,10 +113,6 @@ factors(factor_id, patient_id, type, status)
 ```
 
 ```
-payment_factorse(patient_factor_id, factor_id)
-```
-
-```
 admin(admin_id, administrator, name, family, phone_number, email, password, validated)
 ```
 
@@ -165,4 +161,36 @@ hospitalization_at_home(hospitalization_id, patient_id, doctor_id, start_date, e
 
 ```
 hospitalization_at_home_nurse(hhn_id, hospitalization_id, nurse_id, assigned_date, shift_time)
+```
+
+```
+MedicalDocumentType(mdt_id, name)
+```
+
+```
+MedicalDocument(medical_document, patient_id, file_url, mdt_id)
+```
+
+```
+hospital(hospital_id, name, code, phone_number, email, address, city, province, hospital_type, website, description)
+```
+
+```
+support_hospital_insurance(shi_id, hospital_id, insurance_id)
+```
+
+```
+hospital_doctore(hospital_doctore_id, hospital_id, doctor_id)
+```
+
+```
+request_send_medicine(rsm_id, pharmacy_order, request_date, receiver_name, receiver_phone, delivery_address, delivery_location, preferred_time_window, delivery_cost, need_refrigerator, fast_delivery, notes, delivery_status_id)
+```
+
+```
+delivery_status(delivery_status_id, name, description)
+```
+
+```
+send_medicine(send_medicine_id, snapp_tracking_code, name, phone_number, vehicle_model, vehicle_plate, national_id, profile_photo_url)
 ```

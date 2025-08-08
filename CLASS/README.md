@@ -47,20 +47,34 @@ name
     def list_doctors_by_specialty()
 ```
 
-```
+````
+class DoctorAvailableSlot:
+    slot_id
+    doctor_id
+    types_of_appointments_id
+    start_time
+    end_time
+    is_booked
+
+    def mark_as_booked()
+    def mark_as_available()
+    def update_slot_time()
+    def get_slot_details()
+    ```
+````
+
 class Appointment:
 appointment_id
 patient_id
-doctor_id
-types_of_appointments_id
-date_time
+slot_id
 status
 video_link
 
-    def schedule()
-    def cancel()
+    def book_appointment()
+    def cancel_appointment()
+    def join_appointment()
     def update_status()
-```
+    ```
 
 ```
 class TypeOfAppointment:
@@ -165,19 +179,6 @@ delivery_available
 location
 
     def get_location()
-```
-
-```
-class Message:
-message_id
-sender_id
-receiver_id
-content
-sent_at
-seen
-
-    def send()
-    def mark_as_seen()
 ```
 
 ```

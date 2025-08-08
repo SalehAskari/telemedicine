@@ -13,7 +13,11 @@ specialties(specialty_id, name)
 ```
 
 ```
-appointment(appointment_id, patient_id, doctor_id, types_of_appointments_id, date_time, status, video_link)
+available_appointments(available_appointment_id, doctor_id, types_of_appointments_id, start_time, end_time, is_reserved)
+```
+
+```
+appointments(appointment_id, available_appointment_id, patient_id, status, video_link)
 ```
 
 ```

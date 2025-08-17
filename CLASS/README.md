@@ -605,3 +605,21 @@ class MessageStatus:
     def mark_delivered()
     def get_status()
 ```
+
+```
+class ReportNurse:
+    report_id
+    nurse_id
+    patient_id
+    vital_id
+    shift
+    status
+    notes
+    next_action
+
+    def create_report()
+    def update_report()
+    def view_report()
+    def delete_report()
+
+```

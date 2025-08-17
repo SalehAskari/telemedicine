@@ -222,3 +222,7 @@ message_media(media_id, message_id, file_url, file_type, file_size)
 ```
 message_status(message_id, user_id, is_seen, seen_at, is_delivered)
 ```
+
+```
+ReportNurse(report_id, nurse_id, patient_id, vital_id, shift, status, notes, next_action)
+```

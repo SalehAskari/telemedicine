@@ -1,0 +1,49 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.2 Chrome/134.0.6998.205 Electron/35.3.0 Safari/537.36" version="27.0.2">
+  <diagram name="Page-1" id="rMOK9-Bg8EuvpNPUrZRU">
+    <mxGraphModel dx="1186" dy="916" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-1" value="report nurse" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="149" y="15" width="528" height="907" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;endArrow=none;startFill=0;" edge="1" parent="1" source="9RUugODCXSp0vRUuVzBJ-2" target="9RUugODCXSp0vRUuVzBJ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-2" value="nurse" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="65" y="488" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-12" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;labelBackgroundColor=default;startFill=0;endArrow=none;fillColor=#FAE5C7;" edge="1" parent="1" source="9RUugODCXSp0vRUuVzBJ-3" target="9RUugODCXSp0vRUuVzBJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-3" value="doctor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="771" y="490" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-4" value="create report for patient" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="207" y="142" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-6" value="show report list for patinet" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="355" y="389" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-7" value="فیلتر بر اساس تاریخ" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="246" y="249" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-8" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9RUugODCXSp0vRUuVzBJ-7" target="9RUugODCXSp0vRUuVzBJ-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="345" y="470" as="sourcePoint" />
+            <mxPoint x="505" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-9" value="فیلتر بر اساس علاعم حیاتی" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="467" y="249" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-10" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9RUugODCXSp0vRUuVzBJ-9" target="9RUugODCXSp0vRUuVzBJ-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="297" y="319" as="sourcePoint" />
+            <mxPoint x="386" y="409" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

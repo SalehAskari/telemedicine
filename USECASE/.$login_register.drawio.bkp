@@ -88,6 +88,12 @@
         <mxCell id="lealPOlHKsejdM7l6yrA-1" value="register insurance" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" vertex="1" parent="1">
           <mxGeometry x="468" y="392" width="140" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="lealPOlHKsejdM7l6yrA-3" value="reset password" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="335" y="457" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lealPOlHKsejdM7l6yrA-4" value="edit profile" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
+          <mxGeometry x="335" y="537" width="140" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -61,7 +61,7 @@
         <mxCell id="0cF-kN6dWR6a9IYdRQfF-20" value="delete and edit notifications" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="446" y="411.5" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="0cF-kN6dWR6a9IYdRQfF-22" value="write notification for doctors or patient or nurse or pharmacy" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0cF-kN6dWR6a9IYdRQfF-22" value="write notification for doctors or patient or nurse or pharmacy or local" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="446" y="197" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="0cF-kN6dWR6a9IYdRQfF-24" value="delete and edit her notifications" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">

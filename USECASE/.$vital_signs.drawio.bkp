@@ -10,8 +10,11 @@
         <mxCell id="C76WRnN2kL3qhgyulCsH-2" value="nurse" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
           <mxGeometry x="34" y="413" width="30" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="C76WRnN2kL3qhgyulCsH-11" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;startFill=0;endArrow=none;" edge="1" parent="1" source="C76WRnN2kL3qhgyulCsH-3" target="C76WRnN2kL3qhgyulCsH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="C76WRnN2kL3qhgyulCsH-3" value="patient" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
-          <mxGeometry x="36" y="159" width="30" height="60" as="geometry" />
+          <mxGeometry x="34" y="181" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="C76WRnN2kL3qhgyulCsH-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;startFill=0;" edge="1" parent="1" source="C76WRnN2kL3qhgyulCsH-4" target="C76WRnN2kL3qhgyulCsH-5">
           <mxGeometry relative="1" as="geometry" />
@@ -27,6 +30,9 @@
         </mxCell>
         <mxCell id="C76WRnN2kL3qhgyulCsH-7" value="show history vital sings her patient" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="183" y="499" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="C76WRnN2kL3qhgyulCsH-10" value="Receiving vital signs from devices connected to the patient" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="231" y="154" width="140" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

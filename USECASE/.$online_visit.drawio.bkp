@@ -118,7 +118,7 @@
         <mxCell id="o76b0Syuc_6R8Boq65b_-11" value="show page chat" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="288" y="512" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="o76b0Syuc_6R8Boq65b_-12" value="chat with patient , doctor , nurse" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="o76b0Syuc_6R8Boq65b_-12" value="chat with patient , medicine , nurse" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="520" y="579" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="o76b0Syuc_6R8Boq65b_-15" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o76b0Syuc_6R8Boq65b_-12" target="o76b0Syuc_6R8Boq65b_-11">

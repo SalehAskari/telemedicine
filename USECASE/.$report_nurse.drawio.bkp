@@ -13,6 +13,9 @@
         <mxCell id="9RUugODCXSp0vRUuVzBJ-2" value="nurse" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
           <mxGeometry x="65" y="488" width="30" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="9RUugODCXSp0vRUuVzBJ-12" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;labelBackgroundColor=default;startFill=0;endArrow=none;fillColor=#FAE5C7;" edge="1" parent="1" source="9RUugODCXSp0vRUuVzBJ-3" target="9RUugODCXSp0vRUuVzBJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="9RUugODCXSp0vRUuVzBJ-3" value="doctor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
           <mxGeometry x="771" y="490" width="30" height="60" as="geometry" />
         </mxCell>

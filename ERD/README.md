@@ -37,7 +37,7 @@ prescription_item(item_id, prescription_id, drug_id, dosage, frequency, duration
 ```
 
 ```
-reminder(reminder_id, patient_id, drug_name, time_of_first_use)
+reminder(reminder_id, patient_id, drug_name, time_of_use, next_time_use, few_hours)
 ```
 
 ```
@@ -184,7 +184,7 @@ hospital_doctore(hospital_doctore_id, hospital_id, doctor_id)
 ```
 
 ```
-request_send_medicine(rsm_id, pharmacy_order, request_date, receiver_name, receiver_phone, delivery_address, delivery_location, preferred_time_window, delivery_cost, need_refrigerator, fast_delivery, notes, delivery_status_id)
+request_send_medicine(rsm_id, pharmacy_order_id, request_date, receiver_name, receiver_phone, delivery_address, delivery_location, preferred_time_window, delivery_cost, need_refrigerator, fast_delivery, notes, delivery_status_id)
 ```
 
 ```

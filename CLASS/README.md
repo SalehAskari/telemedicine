@@ -128,7 +128,9 @@ class Reminder:
 reminder_id
 patient_id
 drug_name
-time_of_first_use
+time_of_use
+next_time_use
+few_hours
 
     def send_notification()
 ```
@@ -458,7 +460,7 @@ description
 ```
 class RequestSendMedicine:
 rsm_id
-pharmacy_order
+pharmacy_order_id
 request_date
 receiver_name
 receiver_phone

@@ -37,7 +37,7 @@ prescription_item(item_id, prescription_id, drug_id, dosage, frequency, duration
 ```
 
 ```
-reminder(reminder_id, patient_id, drug_name, time_of_use, next_time_use, few_hours)
+reminder(reminder_id, patient_id, item_id, drug_name, time_of_use, next_time_use, few_hours)
 ```
 
 ```
@@ -65,7 +65,7 @@ device_is_used(device_is_used_id, device_id, patient_id)
 ```
 
 ```
-alert(alert_id, patient_id, triggered_by,severity, sent_to, status)
+alert(alert_id, patient_id, triggered_by,severity, doctor_id, nurse_id, status)
 ```
 
 ```

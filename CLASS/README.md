@@ -61,7 +61,7 @@ class DoctorAvailableSlot:
     def update_slot_time()
     def get_slot_details()
     ```
-````
+```
 
 class Appointment:
 appointment_id
@@ -127,6 +127,7 @@ duration
 class Reminder:
 reminder_id
 patient_id
+item_id
 drug_name
 time_of_use
 next_time_use
@@ -142,6 +143,8 @@ title
 content_type
 file_url
 average_rating
+disease_id
+specialty_id
 
     def rate()
     def view()
@@ -205,9 +208,10 @@ patient_id
 class Alert:
 alert_id
 patient_id
+doctor_id
+nurse_id
 triggered_by
 severity
-sent_to
 status
 
     def trigger()
@@ -625,3 +629,4 @@ class ReportNurse:
     def delete_report()
 
 ```
+````

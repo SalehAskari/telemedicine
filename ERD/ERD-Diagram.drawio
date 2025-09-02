@@ -1,0 +1,731 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="28.1.2">
+  <diagram name="Page-1" id="g63XLa6y2egn1_nH6FCT">
+    <mxGraphModel dx="4060" dy="1810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wIZl321mwMI0PVy2iVGE-1" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;patients&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;patient_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;---&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;family&lt;br&gt;national_code&lt;br&gt;gender&lt;br&gt;date_of_birth&lt;br&gt;phone_number, &lt;br&gt;email, &lt;br&gt;password, chronic_diseases, documents, &lt;br&gt;address&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="-660" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-2" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Doctor&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;doctor_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;specialty_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;family&lt;br&gt;medical_id_number&lt;br&gt;phone_number, &lt;br&gt;email, &lt;br&gt;password, &lt;br&gt;documents, approval_status&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="410" y="260" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-3" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;specialties&lt;/div&gt;&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;span style=&quot;background-color: rgb(228, 228, 228);&quot;&gt;&lt;u&gt;specialty_id&lt;/u&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;---&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1270" y="30" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-4" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;appointments&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;appointment_id&lt;/u&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&lt;br&gt;doctor_id,&lt;br&gt;types_of_appointments_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;date_time, &lt;br&gt;status, &lt;br&gt;video_link&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-695" y="310" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-5" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;types_of_appointments&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;types_of_appointments_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;---&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name, &lt;br&gt;platform&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-935" y="370" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-6" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;vital_signs&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;vital_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;systolic_bp, &lt;br&gt;diastolic_bp, &lt;br&gt;heart_rate, &lt;br&gt;blood_glucose, oxygen_saturation, temperature, &lt;br&gt;measured_at&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1420" y="-880" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-7" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;prescription&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;prescription_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id, doctor_id,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;diagnosis, &lt;br&gt;notes,&lt;br&gt;created_at&lt;br&gt;updated_at,&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="-135" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-8" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;prescription_item&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;item_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;prescription_id,drug_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;dosage, &lt;br&gt;frequency, &lt;br&gt;duration&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1320" y="-115" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-3" target="wIZl321mwMI0PVy2iVGE-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="600" y="220" as="sourcePoint" />
+            <mxPoint x="710" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0.004;entryY=0.136;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-5" target="wIZl321mwMI0PVy2iVGE-4" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-20" y="30" as="sourcePoint" />
+            <mxPoint x="80" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-11" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.002;exitY=0.635;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="wIZl321mwMI0PVy2iVGE-92" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="190" y="540" as="sourcePoint" />
+            <mxPoint x="278" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0.994;entryY=0.193;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.005;exitY=0.884;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-4" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="530" y="-10" as="sourcePoint" />
+            <mxPoint x="60" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-13" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.001;exitY=0.368;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-6" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="223.06" y="-399.51999999999975" as="sourcePoint" />
+            <mxPoint x="1668.06" y="107" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-14" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=-0.011;entryY=0.125;entryDx=0;entryDy=0;exitX=0.997;exitY=0.669;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-7" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="210" y="-70" as="sourcePoint" />
+            <mxPoint x="378" y="-157.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="-160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-15" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;reminder&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;reminder_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;drug_name, time_of_first_use&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="460" y="-890" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-16" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;content_feedback&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;feedback_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;content_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;store, &lt;br&gt;comment, &lt;br&gt;submitted_at&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-920" y="-960" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-17" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;pharmacy_order&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;order_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id, prescription_id,&amp;nbsp; pharmacy_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;order_status, &lt;br&gt;order_date, &lt;br&gt;tracking_code&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-620" y="-620" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-18" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;pharmacy&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;pharmacy_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name, &lt;br&gt;address, &lt;br&gt;phone_number, delivery_available, &lt;br&gt;location&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-1550" y="-700" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-19" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;device&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;device_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;device_type, &lt;br&gt;model_name, serial_number, connection_type&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-2290" y="-860" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-20" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;device_is_used&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;device_is_used_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;device_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1690" y="-985" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-21" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;alert&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;alert_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;doctor_id,&amp;nbsp;patient_id, nurse_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;triggered_by,&lt;br&gt;severity,&lt;br&gt;status&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="260" y="-115" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-22" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;consent&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;consent_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;consent_type, &lt;br&gt;signed_at, &lt;br&gt;valid_until, signature_image&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="650" y="-1070" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-23" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;consent_patient&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;consent_patient_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;consent_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;signed_at&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="410" y="-1000" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-24" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;specialist_referral&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;referral_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;from_doctor_id,&amp;nbsp;&lt;br&gt;to_doctor_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;reason, &lt;br&gt;date_issued, &lt;br&gt;accepted&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="140" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-25" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;video_session_log&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;session_id,,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;appointment_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;duration_in_minutes, connection_quality, issues_reported, recorded_url&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-415" y="330" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-26" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;video_session_log_doctor&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;session_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;doctor_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="370" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-27" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;payment_transaction&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;transaction_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;amount, &lt;br&gt;purpose, &lt;br&gt;transaction_date, payment_method, &lt;br&gt;status&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-510" y="-1010" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-28" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;drug&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;drug_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name, &lt;br&gt;form, &lt;br&gt;strength, usage_instructions&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="-240" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-29" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;symptom_log&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;symptom_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&amp;nbsp; vital_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;symptom_name, &lt;br&gt;severity, &lt;br&gt;logged_at, &lt;br&gt;notes&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="-920" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-30" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;survey_doctor&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;survey_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id, doctor_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;text&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-150" y="-170" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-31" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;survey_pharmecy&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;survey_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id, pharmacy_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;text&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-875" y="-730" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-32" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;factors&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;factor_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;type, &lt;br&gt;status&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-220" y="-1020" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-33" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;users&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;user_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;role_chat_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;profile_photo_url&lt;br&gt;reference_id,&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="1080" y="810" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-34" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;permission&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;permission_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="190" y="730" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-35" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;role_chat&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;role_chat_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="1630" y="660" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-36" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;user_permission&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;user_permission_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;user_id, permission_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="430" y="815" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-37" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.001;exitY=0.152;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-15" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="223.96" y="-449.01999999999975" as="sourcePoint" />
+            <mxPoint x="335" y="-607.04" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-38" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=-0.011;exitY=0.605;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-17" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="60" y="-30" as="sourcePoint" />
+            <mxPoint y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-39" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.891;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.011;exitY=0.195;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-16" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="80" y="-290" as="sourcePoint" />
+            <mxPoint x="90" y="-110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-40" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.825;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.161;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-21" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="223.23999999999984" y="-437.3599999999997" as="sourcePoint" />
+            <mxPoint x="320" y="-89.04761904761905" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="308.06" y="-130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-41" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;MedicalDocument&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;medical_document_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;file_url,&lt;br&gt;mdt_id&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="870" y="-680" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-42" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.001;exitY=0.425;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.013;entryY=0.627;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-41" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="221.98000000000008" y="-386.5799999999999" as="sourcePoint" />
+            <mxPoint x="716.98" y="-312.96000000000004" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="312.98" y="-85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-44" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=-0.011;exitY=0.059;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-32" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="90" y="-200" as="sourcePoint" />
+            <mxPoint x="-70" y="-452.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-45" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;insurance_patient&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;insurance_patient_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;insurance_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;policy_number,&lt;br&gt;expiration_date&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-755" y="-390" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-46" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1.008;entryY=0.114;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-23" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="220.00000000000006" y="-461.77999999999975" as="sourcePoint" />
+            <mxPoint x="220" y="-890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="298.06" y="-110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-47" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-23" target="wIZl321mwMI0PVy2iVGE-22" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="490" y="-475" as="sourcePoint" />
+            <mxPoint x="580" y="-1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="-430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-48" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.011;exitY=0.371;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.002;entryY=0.291;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-20" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-200" y="-420" as="sourcePoint" />
+            <mxPoint x="37" y="-590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1071.98" y="-89.54" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-49" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;insurance&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;insurance_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;coverage_details,&lt;br&gt;phone_number,&lt;br&gt;address&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1525" y="-355" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-50" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.671;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-45" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-280" y="-300" as="sourcePoint" />
+            <mxPoint x="-130" y="-450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-51" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-45" target="wIZl321mwMI0PVy2iVGE-49" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-430" y="-100" as="sourcePoint" />
+            <mxPoint x="-570" y="-60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-52" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-72" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="600" y="108" as="sourcePoint" />
+            <mxPoint x="200" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="525" y="177" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-53" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=-0.017;entryY=0.908;entryDx=0;entryDy=0;exitX=0.995;exitY=0.401;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="wIZl321mwMI0PVy2iVGE-7" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="460" y="482" as="sourcePoint" />
+            <mxPoint x="370" y="543" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-54" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=-0.017;exitY=0.153;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="wIZl321mwMI0PVy2iVGE-30" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="210" as="sourcePoint" />
+            <mxPoint x="670" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-55" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.591;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="wIZl321mwMI0PVy2iVGE-24" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="790" y="500" as="sourcePoint" />
+            <mxPoint x="490" y="583" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-56" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="wIZl321mwMI0PVy2iVGE-72" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="780" y="500" as="sourcePoint" />
+            <mxPoint x="540" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-57" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-7" target="wIZl321mwMI0PVy2iVGE-8" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1100" y="-170" as="sourcePoint" />
+            <mxPoint x="1200" y="-270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-58" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-28" target="wIZl321mwMI0PVy2iVGE-8" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1590" y="-60" as="sourcePoint" />
+            <mxPoint x="1630" y="-210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1560" y="-300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-59" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1.005;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-4" target="wIZl321mwMI0PVy2iVGE-25" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-60" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-35" target="wIZl321mwMI0PVy2iVGE-95" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1510" y="960" as="sourcePoint" />
+            <mxPoint x="1520" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-61" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.005;entryY=0.577;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-36" target="wIZl321mwMI0PVy2iVGE-33" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1510" y="1250" as="sourcePoint" />
+            <mxPoint x="1610" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-62" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-36" target="wIZl321mwMI0PVy2iVGE-34" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1200" y="1190" as="sourcePoint" />
+            <mxPoint x="1300" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-63" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;support_insurance_pharmacy&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;support_insurance_pharmacy_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;pharmacy_id,&amp;nbsp;insurance_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;contract_start,&lt;br&gt;contract_end&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1860" y="-600" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-64" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;disease&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;disease_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;description&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1140" y="-245" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-65" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;nurse&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;nurse_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;family,&lt;br&gt;phone_number,&lt;br&gt;email,&lt;br&gt;license_number,&lt;br&gt;password,&lt;br&gt;experience_years,&lt;br&gt;gender&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1230" y="30" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-66" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;hospitalization_at_home_nurse&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;hhn_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;hospitalization_id,&amp;nbsp;nurse_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;assigned_date,&lt;br&gt;shift_time&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-970" y="130" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-67" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;hospitalization_at_home_device&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;hhd_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;hospitalization_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1340" y="340" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-68" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=-0.011;exitY=0.455;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-31" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-120" y="-300" as="sourcePoint" />
+            <mxPoint x="-170" y="-340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-69" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.987;exitY=0.294;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-29" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="223.23999999999984" y="-414.6999999999998" as="sourcePoint" />
+            <mxPoint x="1578.06" y="-384" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-70" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.992;exitY=0.195;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.215;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-18" target="wIZl321mwMI0PVy2iVGE-17" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-330" y="-300" as="sourcePoint" />
+            <mxPoint x="-230" y="-400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-71" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=-0.005;exitY=0.922;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-30" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-100" y="50" as="sourcePoint" />
+            <mxPoint x="-60" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-72" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;chat&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;chat_id&lt;/u&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,doctor_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;is_group,&lt;br&gt;name,&lt;br&gt;created_by&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="1040" y="350" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-73" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-26" target="wIZl321mwMI0PVy2iVGE-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="50" y="472.5" as="sourcePoint" />
+            <mxPoint x="407" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-74" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-26" target="wIZl321mwMI0PVy2iVGE-25" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="180" y="502" as="sourcePoint" />
+            <mxPoint x="280" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-75" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-29" target="wIZl321mwMI0PVy2iVGE-6" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1240" y="-550" as="sourcePoint" />
+            <mxPoint x="1340" y="-650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-76" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=0.989;exitY=0.375;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.011;entryY=0.317;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-17" target="wIZl321mwMI0PVy2iVGE-7" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="270" y="190" as="sourcePoint" />
+            <mxPoint x="520" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-77" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-63" target="wIZl321mwMI0PVy2iVGE-18" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1310" y="-410" as="sourcePoint" />
+            <mxPoint x="-1600" y="-710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-78" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.993;exitY=0.593;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.007;entryY=0.384;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-63" target="wIZl321mwMI0PVy2iVGE-49" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1310" y="-410" as="sourcePoint" />
+            <mxPoint x="-1610" y="-450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-79" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.006;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-18" target="wIZl321mwMI0PVy2iVGE-31" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-700" y="-540" as="sourcePoint" />
+            <mxPoint x="-600" y="-640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-80" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1.011;entryY=0.677;entryDx=0;entryDy=0;exitX=-0.011;exitY=0.425;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-24" target="wIZl321mwMI0PVy2iVGE-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="550" y="661" as="sourcePoint" />
+            <mxPoint x="811" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-81" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=-0.022;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.705;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="wIZl321mwMI0PVy2iVGE-24" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="430" y="-60" as="sourcePoint" />
+            <mxPoint x="580" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-82" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;patient_disease&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;patient_disease_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;disease_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-845" y="-235" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-83" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-82" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-160" y="60" as="sourcePoint" />
+            <mxPoint x="30" y="-540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-84" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-82" target="wIZl321mwMI0PVy2iVGE-64" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-890" y="-250" as="sourcePoint" />
+            <mxPoint x="-860" y="-180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-85" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;hospitalization_at_home&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;hospitalization_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&amp;nbsp;doctor_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;start_date,&lt;br&gt;end_date,&lt;br&gt;status,&lt;br&gt;notes&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-670" y="122.5" width="190" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-86" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1.006;entryY=0.389;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-66" target="wIZl321mwMI0PVy2iVGE-65" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-970" y="165" as="sourcePoint" />
+            <mxPoint x="-900" y="15" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-87" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.011;exitY=0.416;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.005;entryY=0.345;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-66" target="wIZl321mwMI0PVy2iVGE-85" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-870" y="105" as="sourcePoint" />
+            <mxPoint x="-710" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-88" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.998;exitY=0.383;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.818;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-85" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-20" y="-220" as="sourcePoint" />
+            <mxPoint x="-310" y="-110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-89" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.017;entryY=0.627;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-67" target="wIZl321mwMI0PVy2iVGE-85" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1030" y="425" as="sourcePoint" />
+            <mxPoint x="-950" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-90" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=-0.021;exitY=0.169;exitDx=0;exitDy=0;entryX=1.015;entryY=0.435;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-20" target="wIZl321mwMI0PVy2iVGE-19" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1240" y="-640" as="sourcePoint" />
+            <mxPoint x="-720" y="-270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-91" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=-0.005;exitY=0.397;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-67" target="wIZl321mwMI0PVy2iVGE-19" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1790" y="-350" as="sourcePoint" />
+            <mxPoint x="-1720" y="-250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-940" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-92" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;available_appointments&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;available_appointments_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;patient_id,&lt;br&gt;doctor_id,&lt;br&gt;types_of_appointments_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;date_time, &lt;br&gt;status, &lt;br&gt;video_link&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-450" y="490" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-93" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.005;exitY=0.59;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.382;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-85" target="wIZl321mwMI0PVy2iVGE-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-120" y="540" as="sourcePoint" />
+            <mxPoint x="390" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-94" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=-0.014;exitY=0.135;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.994;entryY=0.406;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-92" target="wIZl321mwMI0PVy2iVGE-4" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-360" y="620" as="sourcePoint" />
+            <mxPoint x="-260" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-95" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;chat_participant&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;&lt;span style=&quot;background-color: rgb(228, 228, 228);&quot;&gt;chat_participant&lt;/span&gt;_id&lt;/u&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;chat_id, user_id, role_chat_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;joined_at&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="1340" y="560" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-96" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;message&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;message_id&lt;/u&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;chat_id,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;sender_id,&lt;br&gt;content, &lt;br&gt;message_type, &lt;br&gt;reply_to_id, &lt;br&gt;sent_at, &lt;br&gt;edited_at, &lt;br&gt;deleted_at&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="1590" y="270" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-97" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;message_media&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;media_id&lt;/u&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;message_id,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;file_url,&lt;br&gt;file_type,&lt;br&gt;file_size&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="1930" y="230" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-98" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;message_status&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;&lt;span style=&quot;background-color: rgb(228, 228, 228);&quot;&gt;message_status&lt;/span&gt;_id&lt;/u&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;message_id, user_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;is_seen,&lt;br&gt;seen_at,&lt;br&gt;is_delivered&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="2060" y="740" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-99" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-96" target="wIZl321mwMI0PVy2iVGE-97" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1540" y="560" as="sourcePoint" />
+            <mxPoint x="1700" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-100" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-96" target="wIZl321mwMI0PVy2iVGE-98" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1690" y="580" as="sourcePoint" />
+            <mxPoint x="1750" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-101" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-72" target="wIZl321mwMI0PVy2iVGE-95" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1580" y="650" as="sourcePoint" />
+            <mxPoint x="1640" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-102" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.002;exitY=0.1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-33" target="wIZl321mwMI0PVy2iVGE-95" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1390" y="810" as="sourcePoint" />
+            <mxPoint x="1490" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-103" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.99;exitY=0.34;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-72" target="wIZl321mwMI0PVy2iVGE-96" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1500" y="810" as="sourcePoint" />
+            <mxPoint x="1600" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-104" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Doctor_Patient&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;Doctor_Patient_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;doctor_id,&amp;nbsp;patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;start_date,&lt;br&gt;end_date,&lt;br&gt;status&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="860" y="-535" width="180" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-105" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-104" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="470" y="-60" as="sourcePoint" />
+            <mxPoint x="570" y="-160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-106" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=-0.017;exitY=0.437;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.016;entryY=0.331;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-104" target="wIZl321mwMI0PVy2iVGE-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="470" y="-60" as="sourcePoint" />
+            <mxPoint x="590" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="-80" />
+              <mxPoint x="800" y="-20" />
+              <mxPoint x="760" y="-80" />
+              <mxPoint x="800" y="-70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-107" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;MedicalDocumentType&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;mdt_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;name&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="-700" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-108" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;educational_content&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;content_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;---&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;title, &lt;br&gt;content_type, &lt;br&gt;file_url, &lt;br&gt;average_rating&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-1460" y="-200" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-109" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-64" target="wIZl321mwMI0PVy2iVGE-108" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-990" y="-410" as="sourcePoint" />
+            <mxPoint x="-890" y="-510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1070" y="-400" />
+              <mxPoint x="-1080" y="-400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-110" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.997;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-107" target="wIZl321mwMI0PVy2iVGE-41" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1150" y="-510" as="sourcePoint" />
+            <mxPoint x="1250" y="-610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-111" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;hospital&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;hospital_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;code,&lt;br&gt;phone_number,&lt;br&gt;email,&lt;br&gt;address,&lt;br&gt;city,&lt;br&gt;province,&lt;br&gt;hospital_type,&lt;br&gt;website,&lt;br&gt;description&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-2070" y="650" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-112" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;support_hospital_insurance&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;shi_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;hospital_id, insurance_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1820" y="-360" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-113" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-112" target="wIZl321mwMI0PVy2iVGE-111" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1580" y="200" as="sourcePoint" />
+            <mxPoint x="-1670" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-114" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0.007;entryY=0.678;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-112" target="wIZl321mwMI0PVy2iVGE-49" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-1400" y="-500" as="sourcePoint" />
+            <mxPoint x="-1670" y="-360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-115" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;hospital_doctor&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;hospital_doctor_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;hospital_id, doctor_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="750" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-116" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-115" target="wIZl321mwMI0PVy2iVGE-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-150" y="710" as="sourcePoint" />
+            <mxPoint x="-300" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-117" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-115" target="wIZl321mwMI0PVy2iVGE-111" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-960" y="750" as="sourcePoint" />
+            <mxPoint x="-1480" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-700" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-118" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;request_send_medicine&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;rsm_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;pharmacy_order,&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;request_date,&lt;br&gt;receiver_name,&lt;br&gt;receiver_phone,&lt;br&gt;delivery_address,&lt;br&gt;delivery_location&lt;br&gt;preferred_time_window,&lt;br&gt;delivery_cost,&lt;br&gt;need_refrigerator,&lt;br&gt;fast_delivery,&lt;br&gt;notes,&lt;br&gt;delivery_status_id&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1010" y="-580" width="180" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-119" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;delivery_status&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;delivery_status_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;description&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1320" y="-610" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-120" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;send_medicine&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;send_medicine_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;insurance_id, patient_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;snapp_tracking_code,&lt;br&gt;name,&lt;br&gt;phone_number,&lt;br&gt;vehicle_model,&lt;br&gt;vehicle_plate,&lt;br&gt;national_id,&lt;br&gt;profile_photo_url&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-1530" y="-547.5" width="180" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-121" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.016;exitY=0.401;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-17" target="wIZl321mwMI0PVy2iVGE-118" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-480" y="-350" as="sourcePoint" />
+            <mxPoint x="-450" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-122" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-119" target="wIZl321mwMI0PVy2iVGE-118" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-730" y="-360" as="sourcePoint" />
+            <mxPoint x="-450" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-123" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-120" target="wIZl321mwMI0PVy2iVGE-118" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-800" y="-20" as="sourcePoint" />
+            <mxPoint x="-700" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-124" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.992;exitY=0.624;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-33" target="wIZl321mwMI0PVy2iVGE-98" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1330" y="1010" as="sourcePoint" />
+            <mxPoint x="1840" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-125" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-35" target="wIZl321mwMI0PVy2iVGE-33" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1340" y="1010" as="sourcePoint" />
+            <mxPoint x="1660" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-126" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;admin&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;admin_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;administrator,&lt;br&gt;name,&lt;br&gt;family,&lt;br&gt;phone_number,&lt;br&gt;email,&lt;br&gt;password,&lt;br&gt;validated&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="110" y="490" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-127" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;admin_role&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;admin_role_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;admin_id, role_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="350" y="505" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-128" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;admin_permission&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;admin_permission_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;admin_id, permission_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="-150" y="640" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-129" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-126" target="wIZl321mwMI0PVy2iVGE-127" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="540" y="710" as="sourcePoint" />
+            <mxPoint x="640" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-130" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-126" target="wIZl321mwMI0PVy2iVGE-128" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="590" y="640" as="sourcePoint" />
+            <mxPoint x="460" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-131" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;role&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;role_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="590" y="640" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-132" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0.991;entryY=0.443;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-131" target="wIZl321mwMI0PVy2iVGE-127" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="910" y="730" as="sourcePoint" />
+            <mxPoint x="1010" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-133" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-34" target="wIZl321mwMI0PVy2iVGE-128" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="520" y="730" as="sourcePoint" />
+            <mxPoint x="620" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-134" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.015;entryY=0.927;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-108" target="wIZl321mwMI0PVy2iVGE-16" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-990" y="-270" as="sourcePoint" />
+            <mxPoint x="-890" y="-370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-135" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1.002;entryY=0.884;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-26" target="wIZl321mwMI0PVy2iVGE-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="110" y="310" as="sourcePoint" />
+            <mxPoint x="200" y="-300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-136" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.018;entryY=0.332;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-137" target="wIZl321mwMI0PVy2iVGE-33" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="900" as="sourcePoint" />
+            <mxPoint x="960" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-137" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;user_role&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;user_role_id,&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;role_id, user_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;name,&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="830" y="620" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wIZl321mwMI0PVy2iVGE-138" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-137" target="wIZl321mwMI0PVy2iVGE-131" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="770" y="680" as="sourcePoint" />
+            <mxPoint x="870" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4kv-ty2LbEgDn-1uhMWY-1" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-32" target="wIZl321mwMI0PVy2iVGE-27" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-300" y="-750" as="sourcePoint" />
+            <mxPoint x="-200" y="-850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vt4gFoiHX0aBwf-MGWk1-1" value="&lt;div style=&quot;box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;NurseReport&lt;/div&gt;&lt;table border=&quot;1&quot; style=&quot;width: 100%; font-size: 1em; border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td style=&quot;border-collapse: collapse; border-color: rgb(0, 0, 0);&quot; border=&quot;1&quot;&gt;&lt;u&gt;NurseReport_id&lt;/u&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK1&lt;/td&gt;&lt;td&gt;nurse_id, patient_id, doctor_id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;report&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-935" y="-50" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Vt4gFoiHX0aBwf-MGWk1-2" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1.006;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-65" target="Vt4gFoiHX0aBwf-MGWk1-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-590" y="270" as="sourcePoint" />
+            <mxPoint x="-490" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vt4gFoiHX0aBwf-MGWk1-3" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1.005;entryY=0.144;entryDx=0;entryDy=0;exitX=0;exitY=0.782;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-1" target="Vt4gFoiHX0aBwf-MGWk1-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-370" y="-100" as="sourcePoint" />
+            <mxPoint x="-490" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vt4gFoiHX0aBwf-MGWk1-4" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="Vt4gFoiHX0aBwf-MGWk1-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="394.07000000000045" y="246.90999999999985" as="sourcePoint" />
+            <mxPoint x="-750.0000000000002" y="14" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vepUCtq9jiey57MKsV2w-2" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0.997;exitY=0.158;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wIZl321mwMI0PVy2iVGE-2" target="wIZl321mwMI0PVy2iVGE-21">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="590" y="170" as="sourcePoint" />
+            <mxPoint x="630" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vepUCtq9jiey57MKsV2w-3" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wIZl321mwMI0PVy2iVGE-65" target="wIZl321mwMI0PVy2iVGE-21">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-840" y="80" as="sourcePoint" />
+            <mxPoint x="160" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
